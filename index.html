@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ميثاق السلوك الطلابي | أكاديمية الشروق - المعهد العالي للحاسبات وتكنولوجيا المعلومات</title>
+    <!-- استدعاء خطوط جوجل العربية (Cairo و IBM Plex Sans Arabic) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- مكتبة Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        campus: {
+                            bg: '#F4F6F8',
+                            navy: '#0F172A',
+                            navyLight: '#1E293B',
+                            red: '#B91C1C',
+                            redDark: '#991B1B',
+                            redLight: '#FEF2F2',
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['"Cairo"', 'sans-serif'],
+                        body: ['"IBM Plex Sans Arabic"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-campus-bg text-campus-navy font-body antialiased selection:bg-campus-red selection:text-white">
+
+    <!-- شريط الحالة المؤسسي العلوي -->
+    <div class="bg-campus-navy text-slate-200 text-xs sm:text-sm py-2.5 px-4 border-b border-slate-800">
+        <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <div class="flex items-center gap-2">
+                <span class="inline-block w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                <span class="font-bold text-white">وحدة الجودة — معيار المشاركة الاجتماعية</span>
+            </div>
+            <span class="text-slate-300 text-xs sm:text-sm">موجّه لجميع الفرق الدراسية</span>
+        </div>
+    </div>
+
+    <!-- الترويسة المؤسسية -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
+            <!-- هوية المعهد والأكاديمية -->
+            <div class="flex items-center gap-3.5">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-white flex items-center justify-center p-1.5 shrink-0 shadow-sm border border-slate-200">
+                    <img src="https://hicit.sha.edu.eg/assets/img/logo.png" alt="شعار المعهد العالي للحاسبات وتكنولوجيا المعلومات - أكاديمية الشروق" class="w-full h-full object-contain" onerror="this.onerror=null; this.src='https://placehold.co/100x100/0F172A/FFFFFF?text=HICIT';">
+                </div>
+                <div>
+                    <span class="inline-block text-xs font-bold text-campus-red mb-0.5">أكاديمية الشروق</span>
+                    <h2 class="font-heading font-extrabold text-sm sm:text-base md:text-lg text-campus-navy leading-tight">
+                        المعهد العالي للحاسبات وتكنولوجيا المعلومات
+                    </h2>
+                </div>
+            </div>
+
+            <!-- روابط التنقل السريع -->
+            <nav class="flex items-center gap-2 sm:gap-3">
+                <a href="#red-lines" class="text-xs sm:text-sm font-heading font-bold text-slate-700 hover:text-campus-red px-3 py-2 rounded-xl hover:bg-slate-100 transition">
+                    السلوكيات المرفوضة (10)
+                </a>
+                <a href="#sanctions" class="text-xs sm:text-sm font-heading font-bold bg-campus-navy hover:bg-campus-navyLight text-white px-4 py-2.5 rounded-xl transition shadow-sm">
+                    لائحة الجزاءات
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- القسم الترحيبي الرئيسي (Hero Section) -->
+    <section class="relative bg-white border-b border-slate-200 overflow-hidden">
+        <!-- خط علوي مميز -->
+        <div class="h-1.5 w-full bg-gradient-to-l from-campus-red via-campus-navy to-campus-red"></div>
+        
+        <div class="max-w-6xl mx-auto px-4 py-10 sm:py-14">
+            <div class="max-w-4xl">
+                <!-- شارات المبادرة -->
+                <div class="flex flex-wrap items-center gap-2.5 mb-6">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-campus-navy text-white text-xs sm:text-sm font-heading font-bold shadow-sm">
+                        <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                        وحدة الجودة — معيار المشاركة الاجتماعية
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-campus-redLight border border-red-200 text-campus-red text-xs sm:text-sm font-heading font-bold">
+                        ميثاق السلوك الطلابي داخل الحرم الأكاديمي
+                    </span>
+                </div>
+
+                <!-- العنوان الرئيسي المطابق للبوستر -->
+                <h1 class="font-heading font-black text-3xl sm:text-5xl text-campus-navy leading-tight mb-4">
+                    الاحترام مبدأ.. <span class="text-campus-red">وليس اختياراً.</span>
+                </h1>
+
+                <p class="font-heading font-extrabold text-lg sm:text-2xl text-slate-800 border-r-4 border-campus-red pr-4 py-2 mb-6 bg-slate-50 rounded-l-xl">
+                    حدودك تقف عند حرية وخصوصية زميلتك — ميثاق السلوك الطلابي داخل الحرم الأكاديمي.
+                </p>
+
+                <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-8">
+                    رجولتك وقيمتك كطالب جامعي تُقاس بمدى احترامك لزميلاتك وحفاظك على بيئة تعليمية آمنة يفتخر بها الجميع، لا بتجاوز الحدود. يوضح هذا الدليل المعتمد من <strong>المعهد العالي للحاسبات وتكنولوجيا المعلومات</strong> أبرز السلوكيات المرفوضة والجزاءات المترتبة عليها.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-3">
+                    <a href="#red-lines" class="w-full sm:w-auto text-center bg-campus-red hover:bg-campus-redDark text-white font-heading font-bold px-7 py-3.5 rounded-xl transition shadow-sm">
+                        استعراض الـ 10 سلوكيات المرفوضة
+                    </a>
+                    <a href="#sanctions" class="w-full sm:w-auto text-center bg-white hover:bg-slate-50 text-campus-navy border-2 border-slate-300 font-heading font-bold px-7 py-3.5 rounded-xl transition">
+                        تدرج الجزاءات التأديبية
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- القسم الأول: أين تبدأ الخطوط الحمراء؟ 10 سلوكيات مرفوضة داخل الحرم -->
+        <section id="red-lines" class="scroll-mt-24">
+            <div class="mb-7">
+                <span class="text-xs font-bold uppercase tracking-wider text-campus-red block mb-1">القسم الأول — التوعية وتحديد السلوك</span>
+                <h2 class="font-heading font-black text-2xl sm:text-3xl text-campus-navy">أين تبدأ الخطوط الحمراء؟ 10 سلوكيات مرفوضة داخل الحرم</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-3xl leading-relaxed">
+                    التجاوزات غير المباشرة أو المغلّفة بـ "الهزار" لا تقل خطورة عن التعدي الصريح، وتُعامل بذات القدر من الحزم. اختر التصنيف أدناه لاستعراض الأمثلة التوضيحية:
+                </p>
+            </div>
+
+            <!-- أزرار التصفية التفاعلية -->
+            <div class="flex flex-wrap gap-2.5 mb-8" role="tablist" aria-label="تصنيف السلوكيات المرفوضة">
+                <button onclick="filterBehaviors('all')" id="tab-all" class="filter-btn px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm bg-campus-navy text-white transition shadow-sm">
+                    الكل (10)
+                </button>
+                <button onclick="filterBehaviors('verbal')" id="tab-verbal" class="filter-btn px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition">
+                    التجاوزات اللفظية والمبطنة (4)
+                </button>
+                <button onclick="filterBehaviors('physical')" id="tab-physical" class="filter-btn px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition">
+                    التجاوزات الجسدية والمكانية (3)
+                </button>
+                <button onclick="filterBehaviors('digital')" id="tab-digital" class="filter-btn px-4 py-2.5 rounded-xl font-heading font-bold text-xs sm:text-sm bg-white text-slate-700 border border-slate-200 hover:bg-slate-50 transition">
+                    التجاوزات الرقمية والسلوكية (3)
+                </button>
+            </div>
+
+            <!-- شبكة البطاقات الـ 10 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5" id="behaviors-grid">
+
+                <!-- 1. التعليقات العابرة بنية الهزار -->
+                <article data-category="verbal" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات اللفظية والمبطنة</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">01</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">التعليقات العابرة بنية "الهزار"</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    التعليق على مظهر الزميلات، ملابسهن، أو نبرة صوتهن بحجة المزاح أو خفة الظل. هذا السلوك يُعد انتهاكاً للخصوصية ويخلق بيئة دراسية غير مريحة، وذريعة "المزاح" لا تُسقط المساءلة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2. النظرات المتفحصة والمستمرة -->
+                <article data-category="verbal" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات اللفظية والمبطنة</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">02</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">النظرات المتفحصة والمستمرة</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    التحديق غير المبرر أو متابعة حركة الزميلات بنظرات فاحصة في الساحات أو المدرجات، مما يسبب لهن التوتر والشعور بعدم الأمان داخل الحرم الجامعي.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3. التلميحات والإيحاءات غير اللائقة -->
+                <article data-category="verbal" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات اللفظية والمبطنة</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">03</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">التلميحات والإيحاءات غير اللائقة</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    استخدام عبارات مزدوجة المعنى، أو إلقاء نكات ذات إيحاءات خارجة بصوت مسموع عند مرور الزميلات، وهو أسلوب تحرش مبطّن يُحاسب عليه القانون ولائحة الانضباط.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. الملاحقة والتتبع داخل الحرم -->
+                <article data-category="physical" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الجسدية والمكانية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">04</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">الملاحقة والتتبع داخل الحرم</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    السير المتعمد خلف الزميلات بين مباني المعهد، أو الوقوف وانتظارهن أمام أبواب القاعات الدراسية وبوابات الدخول بقصد المضايقة أو فرض التواصل.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5. تعمّد الاقتراب والاحتكاك الجسدي -->
+                <article data-category="physical" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الجسدية والمكانية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">05</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">تعمّد الاقتراب والاحتكاك الجسدي</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    عدم ترك مسافة شخصية آمنة في الممرات الضيقة أو أثناء صعود وهبوط السلالم، وتعمد التلامس أو الالتصاق، وهو تعدٍّ جسيم يوجب العقوبة الفورية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6. تضييق المساحة الشخصية في الأماكن المزدحمة -->
+                <article data-category="physical" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الجسدية والمكانية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">06</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">تضييق المساحة الشخصية في الأماكن المزدحمة</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    تعمد التزاحم أو التدافع عند بوابات الدخول، أمام شؤون الطلاب، أو داخل الكافتيريا والمصاعد رغم وجود متسع يسمح بالالتزام بالنظام.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7. إطلاق الألقاب أو الصفير والنداءات غير المهذبة -->
+                <article data-category="verbal" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات اللفظية والمبطنة</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">07</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">إطلاق الألقاب أو الصفير والنداءات غير المهذبة</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    مناداة الزميلات بألقاب غير رسمية، أو إصدار أصوات وصفير لجذب الانتباه في الساحات، مما يتنافى مع الذوق العام والآداب الجامعية الرفيعة.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8. التصوير أو التسجيل دون إذن صريح -->
+                <article data-category="digital" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الرقمية والسلوكية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">08</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">التصوير أو التسجيل دون إذن صريح</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    استخدام الهاتف لالتقاط صور أو مقاطع فيديو للزميلات داخل الحرم الأكاديمي أو نشرها عبر الإنترنت دون موافقتهن المسبقة، وهو انتهاك صريح للخصوصية.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9. المضايقة الرقمية عبر مجموعات الدفعة -->
+                <article data-category="digital" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الرقمية والسلوكية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">09</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">المضايقة الرقمية عبر مجموعات الدفعة</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    استغلال مجموعات الدراسة (WhatsApp أو Telegram) للحصول على أرقام الزميلات وإرسال رسائل خاصة متكررة دون رغبتهن، أو كتابة تعليقات مسيئة على المنصات.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 10. السخرية والتقليل من الشأن أو التلفظ بألفاظ نابية -->
+                <article data-category="digital" class="behavior-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:border-campus-red/50 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-4">
+                            <span class="text-xs font-bold px-3 py-1 rounded-lg bg-slate-100 text-slate-700">التجاوزات الرقمية والسلوكية</span>
+                            <span class="inline-flex items-center gap-1.5 text-xs font-bold px-2.5 py-1 rounded-lg bg-campus-redLight text-campus-red border border-red-200">
+                                <span class="w-1.5 h-1.5 rounded-full bg-campus-red"></span>
+                                سلوك مرفوض
+                            </span>
+                        </div>
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-9 h-9 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-sm shrink-0 mt-0.5">10</div>
+                            <div>
+                                <h3 class="font-heading font-extrabold text-lg text-campus-navy mb-2">السخرية والتقليل من الشأن أو التلفظ بألفاظ نابية</h3>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    التعامل المهين، التنمر اللفظي، أو التلفظ بعبارات خارجة أمام الآخرين؛ مما يسيء إلى سمعة الطالب نفسه ويتعارض مع قيم المجتمع الأكاديمي.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- القسم الثاني: لائحة الانضباط الطلابي وتدرج الجزاءات -->
+        <section id="sanctions" class="scroll-mt-24 bg-white rounded-3xl border border-slate-200 p-6 sm:p-10 shadow-sm">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 border-b border-slate-100 pb-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-campus-red block mb-1">القسم الثاني — الحزم والردع المؤسسي</span>
+                    <h2 class="font-heading font-black text-2xl sm:text-3xl text-campus-navy">لائحة الانضباط الطلابي وتدرج الجزاءات</h2>
+                    <p class="text-slate-600 mt-2 text-sm sm:text-base max-w-3xl leading-relaxed">
+                        تلتزم إدارة الأكاديمية بتطبيق لائحة الانضباط الطلابي بحزم وصرامة تامة تجاه أي سلوك غير لائق، وفق سلم العقوبات التصاعدي التالي بحسب جسامة المخالفة:
+                    </p>
+                </div>
+                <div class="inline-flex items-center gap-2 bg-campus-navy text-white px-4 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold shrink-0">
+                    <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                    <span>إجراءات فورية وحاسمة</span>
+                </div>
+            </div>
+
+            <!-- سلم الجزاءات الـ 5 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                
+                <!-- الخطوة 1 -->
+                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-base mb-4">1</div>
+                        <h3 class="font-heading font-extrabold text-base text-campus-navy mb-2">الاستدعاء والتحقيق الرسمي الفوري</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            إحالة الطالب المخالف فوراً للتحقيق الرسمي أمام اللجنة القانونية المختصة لسماع الأقوال وفحص الأدلة.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- الخطوة 2 -->
+                <div class="bg-slate-50 rounded-2xl p-5 border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-campus-navy text-white font-heading font-black flex items-center justify-center text-base mb-4">2</div>
+                        <h3 class="font-heading font-extrabold text-base text-campus-navy mb-2">الإنذار الكتابي وإخطار ولي الأمر</h3>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            توجيه إنذار رسمي يُثبت في ملف الطالب الأكاديمي، مع إرسال إخطار رسمي لولي الأمر بالواقعة.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- الخطوة 3 -->
+                <div class="bg-amber-50/70 rounded-2xl p-5 border border-amber-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-amber-600 text-white font-heading font-black flex items-center justify-center text-base mb-4">3</div>
+                        <h3 class="font-heading font-extrabold text-base text-campus-navy mb-2">الحرمان من دخول الامتحانات أو إلغاء مقررات</h3>
+                        <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                            الحرمان من دخول امتحانات الفصل الدراسي أو إلغاء امتحان مقرر دراسي أو أكثر وفق قرار مجلس التأديب.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- الخطوة 4 -->
+                <div class="bg-red-50/70 rounded-2xl p-5 border border-red-200 flex flex-col justify-between">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-campus-red/90 text-white font-heading font-black flex items-center justify-center text-base mb-4">4</div>
+                        <h3 class="font-heading font-extrabold text-base text-campus-navy mb-2">الفصل المؤقت من المعهد / الأكاديمية</h3>
+                        <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
+                            إيقاف قيد الطالب وحرمانه من الدراسة لمدة فصل دراسي كامل أو عام أكاديمي كامل.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- الخطوة 5 -->
+                <div class="bg-campus-redLight rounded-2xl p-5 border-2 border-campus-red flex flex-col justify-between shadow-sm">
+                    <div>
+                        <div class="w-10 h-10 rounded-xl bg-campus-red text-white font-heading font-black flex items-center justify-center text-base mb-4">5</div>
+                        <h3 class="font-heading font-extrabold text-base text-campus-red mb-2">الفصل النهائي من الأكاديمية</h3>
+                        <p class="text-slate-800 text-xs sm:text-sm leading-relaxed font-semibold">
+                            شطب قيد الطالب نهائياً من المعهد والأكاديمية في حالات التعدي الجسيم أو تكرار المخالفة.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="bg-campus-navy text-slate-300 border-t border-slate-800 mt-14">
+        <div class="max-w-6xl mx-auto px-4 py-10">
+            
+            <!-- التنويه الرسمي -->
+            <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-5 sm:p-6 mb-8 flex items-start gap-3.5">
+                <svg class="w-6 h-6 text-emerald-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                </svg>
+                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
+                    هذه الصفحة صادرة ضمن مبادرة <strong>وحدة الجودة (معيار المشاركة الاجتماعية)</strong> - المعهد العالي للحاسبات وتكنولوجيا المعلومات، أكاديمية الشروق، لتعزيز بيئة تعليمية آمنة ومحترمة للجميع.
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
+                <p>© المعهد العالي للحاسبات وتكنولوجيا المعلومات — أكاديمية الشروق.</p>
+                <p>وحدة ضمان الجودة — معيار المشاركة الاجتماعية.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- سكربت تصفية البطاقات -->
+    <script>
+        // تصفية بطاقات السلوكيات المرفوضة الـ 10
+        function filterBehaviors(category) {
+            const cards = document.querySelectorAll('.behavior-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-campus-navy', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+            });
+
+            const activeBtn = document.getElementById('tab-' + category);
+            if (activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-slate-700', 'border', 'border-slate-200');
+                activeBtn.classList.add('bg-campus-navy', 'text-white', 'shadow-sm');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
